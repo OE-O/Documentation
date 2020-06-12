@@ -7,35 +7,35 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
-      { text: "Reference", link: "/reference/" },
+      { text: "Reference", link: "/reference/#basic" },
       { text: 'Github', link: 'https://github.com/OE-O' }
     ],
     sidebar: {
       '/guide/': [
         {
-          title: 'Guide',   // required
-          collapsable: false, // optional, defaults to true
-          sidebarDepth: 1,    // optional, defaults to 1
+          title: 'Guide',
+          collapsable: false,
+          sidebarDepth: 1,
           children: [
             '/guide/',
             '/guide/getting-started',
-            '/guide/api-tokens'
+            '/guide/api-tokens',
           ]
         },
         {
         title: 'Advanced',
         collapsable: false,
-        sidebarDepth: 2,
-        displayAllHeaders: true
+        sidebarDepth: 1,
+        displayAllHeaders: true,
         }
       ],
       '/reference/': [
         {
-          title: 'Reference',   // required
-          collapsable: false, // optional, defaults to true
-          sidebarDepth: 1,    // optional, defaults to 1
+          title: 'Reference',
+          collapsable: false,
+          sidebarDepth: 2,
           children: [
-            '/reference/'
+            '/reference/#basic',
           ]
         }
       ]
