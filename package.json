@@ -13,6 +13,7 @@
   "author": "MattA",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^1.5.1"
+    "vuepress": "^1.5.1",
+    "vuepress-theme-dark": "^0.1.0"
   }
 }

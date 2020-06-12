@@ -1,4 +1,5 @@
 module.exports = {
+  theme: 'dark',
   title: 'OE-O Documentation',
   description: 'Documentation for the OE-O public API',
   themeConfig: {
@@ -20,7 +21,7 @@ module.exports = {
         ]
       },
       {
-        title: 'Advanced',   // required
+        title: 'Full Documentation',   // required
         collapsable: false, // optional, defaults to true
         sidebarDepth: 2,    // optional, defaults to 1
         displayAllHeaders: true,
