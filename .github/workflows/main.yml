@@ -14,7 +14,9 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
     - name: Build Documentation
-      run: npm run docs:build 
+      run: | 
+            npm i vuepress
+            npm run docs:build 
     - name: Deploy to Firebase
       uses: lowply/deploy-firebase@v0.0.2
     - uses: actions/setup-ruby@v1
