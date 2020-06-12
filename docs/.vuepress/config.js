@@ -9,7 +9,7 @@ module.exports = {
       { text: "Guide", link: "/guide/" },
       { text: 'Github', link: 'https://github.com/OE-O' }
     ],
-    sidebar: [
+    sidebar: {
       '/guide/': [
       title: 'Guide',
       'guide/,
@@ -39,6 +39,6 @@ module.exports = {
 //         displayAllHeaders: true
 //       }
       
-    ]
+    }
   }
 };
