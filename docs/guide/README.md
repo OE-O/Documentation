@@ -3,7 +3,16 @@ Welcome to the OE-O API guide!
 ## How It Works
 The API is a basic REST-API, you collect data by using web requests and other methods.
 
-Example:
+The documentation will document all methods using an example like the below:
+
+### GET
+
+<RouteHighlighter method="GET" route="/this/is/a/fake/route/:abc123?abc123="/> 
+
+| Variable  | Example 	| Description      	|
+|---------	|---------	|------------------	|
+| :abc123 	| abc123  	| A url paramater. 	|
+| ?abc123 	| abc123  	| A query.         	|
 
 
 
