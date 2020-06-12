@@ -7,6 +7,7 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
+      { text: "Reference", link: "/reference/" },
       { text: 'Github', link: 'https://github.com/OE-O' }
     ],
     themeConfig: {
