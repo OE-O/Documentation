@@ -1,0 +1,32 @@
+name: CI
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v1.4.2
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Build Documentation
+      run: npm run docs:build 
+    - name: Deploy to Firebase
+      uses: lowply/deploy-firebase@v0.0.2
+    - uses: actions/setup-ruby@v1
+    - name: Send Webhook Notification    
+      if: always()
+      env:
+        JOB_STATUS: ${{ job.status }}
+        WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
+        HOOK_OS_NAME: ${{ runner.os }}
+        WORKFLOW_NAME: ${{ github.workflow }}
+      run: |
+        git clone https://github.com/DiscordHooks/github-actions-discord-webhook.git webhook
+        bash webhook/send.sh $JOB_STATUS $WEBHOOK_URL
+      shell: bash
+
