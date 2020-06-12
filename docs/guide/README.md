@@ -1,3 +1,5 @@
+![Build and Deploy](https://github.com/OE-O/Documentation/workflows/Build%20and%20Deploy/badge.svg)
+
 # Introduction
 Welcome to the OE-O API guide!
 ## How It Works
