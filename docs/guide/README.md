@@ -1,4 +1,4 @@
-![Build and Deploy](https://github.com/OE-O/Documentation/workflows/Vuepress%20Build/badge.svg)
+![Vuepress Build](https://github.com/OE-O/Documentation/workflows/Vuepress%20Build/badge.svg)
 
 # Introduction
 Welcome to the OE-O API guide!
