@@ -15,5 +15,8 @@
   "devDependencies": {
     "vuepress": "^1.5.1",
     "vuepress-theme-dark": "^0.1.0"
+  },
+  "dependencies": {
+    "vuepress-theme-yuu": "^2.3.0"
   }
 }
