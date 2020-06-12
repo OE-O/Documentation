@@ -1,5 +1,5 @@
 module.exports = {
-  theme: 'dark',
+  theme: 'yuu',
   title: 'OE-O Documentation',
   description: 'Documentation for the OE-O public API',
   themeConfig: {
