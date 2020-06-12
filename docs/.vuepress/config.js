@@ -11,9 +11,8 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: 'Guide',   // required
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 2,    // optional, defaults to 1
+        title: 'Guide',
+        collapsable: false,
         children: [
           '/guide/',
           '/guide/getting-started',
@@ -21,10 +20,10 @@ module.exports = {
         ]
       },
       {
-        title: 'Full Documentation',   // required
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 2,    // optional, defaults to 1
-        displayAllHeaders: true,
+        title: 'Full Documentation',
+        collapsable: false,
+        sidebarDepth: 2,
+        displayAllHeaders: true
       }
     ]
   }
