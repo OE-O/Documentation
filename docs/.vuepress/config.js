@@ -2,6 +2,7 @@ module.exports = {
   title: 'OE-O Documentation',
   description: 'Documentation for the OE-O public API',
   themeConfig: {
+    logo: 'https://firebasestorage.googleapis.com/v0/b/oe-o-api.appspot.com/o/promotional%2Flogos%2Frounded.png?alt=media',
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
