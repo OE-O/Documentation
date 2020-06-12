@@ -1,5 +1,5 @@
 module.exports = {
-  theme: 'dark',
+  theme: 'vuepress-theme-dark',
   title: 'OE-O Documentation',
   description: 'Documentation for the OE-O public API',
   themeConfig: {
