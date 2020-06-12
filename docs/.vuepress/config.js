@@ -9,23 +9,36 @@ module.exports = {
       { text: "Guide", link: "/guide/" },
       { text: 'Github', link: 'https://github.com/OE-O' }
     ],
-    sidebar: [
-    {
-        title: 'Guide',
-        collapsable: false,
-        children: [
-          '/guide/',
-          '/guide/getting-started',
-          '/guide/api-tokens'
-        ]
-      },
-      {
-        title: 'Full Documentation',
+    themeConfig: {
+    sidebar: {
+      '/guide/': [
+        {
+          title: 'Guide',   // required
+          collapsable: false, // optional, defaults to true
+          sidebarDepth: 1,    // optional, defaults to 1
+          children: [
+            '/guide/',
+            '/guide/getting-started',
+            '/guide/api-tokens'
+          ]
+        },
+        {
+        title: 'Advanced',
         collapsable: false,
         sidebarDepth: 2,
         displayAllHeaders: true
-      }
-      
-    ]
+        }
+      ],
+      '/reference/': [
+        {
+          title: 'Reference',   // required
+          collapsable: false, // optional, defaults to true
+          sidebarDepth: 1,    // optional, defaults to 1
+          children: [
+            '/reference/'
+          ]
+        }
+      ]
+    }
   }
 };
