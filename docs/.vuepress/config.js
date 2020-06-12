@@ -10,7 +10,6 @@ module.exports = {
       { text: "Reference", link: "/reference/" },
       { text: 'Github', link: 'https://github.com/OE-O' }
     ],
-    themeConfig: {
     sidebar: {
       '/guide/': [
         {
