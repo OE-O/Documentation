@@ -1,6 +1,11 @@
 # Introduction
-A description goes here...
+Welcome to the OE-O API guide!
 ## How It Works
-A short explaination explaining the api works...
+The API is a basic REST-API, you collect data by using web requests and other methods.
+
+Example:
+
+
+
 ## Features
 Features of the api go here...
