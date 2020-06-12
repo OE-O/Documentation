@@ -22,16 +22,25 @@ jobs:
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         FIREBASE_PROJECT: oe-o-docs
-    - uses: actions/setup-ruby@v1
-    - name: Send Webhook Notification    
-      if: always()
-      env:
-        JOB_STATUS: ${{ job.status }}
-        WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
-        HOOK_OS_NAME: ${{ runner.os }}
-        WORKFLOW_NAME: ${{ github.workflow }}
-      run: |
-        git clone https://github.com/DiscordHooks/github-actions-discord-webhook.git webhook
-        bash webhook/send.sh $JOB_STATUS $WEBHOOK_URL
-      shell: bash
+    - name: Check if success.
+      uses: rjstone/discord-webhook-notify@v1
+      if: success()
+      with:
+          severity: info
+          details: Test Succeeded!
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+    - name: Check if fail
+      uses: rjstone/discord-webhook-notify@v1
+      if: failure()
+      with:
+          severity: error
+          details: Test Failed!
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+    - name: Check if cancelled.
+      uses: rjstone/discord-webhook-notify@v1
+      if: cancelled()
+      with:
+          severity: warn
+          details: Test Cancelled!
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
 
