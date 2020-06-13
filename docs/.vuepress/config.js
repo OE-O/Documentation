@@ -5,10 +5,10 @@ module.exports = {
   themeConfig: {
     logo: 'https://firebasestorage.googleapis.com/v0/b/oe-o-api.appspot.com/o/promotional%2Flogos%2Frounded.png?alt=media',
     nav: [
-      { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
-      { text: "Reference", link: "/reference/#basic" },
-      { text: 'Github', link: 'https://github.com/OE-O' }
+      { text: "Reference", link: "/reference/" },
+      { text: "About", link: "/info/"},
+      { text: 'Github', link: 'https://github.com/OE-O' },
     ],
     sidebar: {
       '/guide/': [
