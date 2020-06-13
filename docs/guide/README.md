@@ -1,7 +1,5 @@
-![Vuepress Build](https://github.com/OE-O/Documentation/workflows/Vuepress%20Build/badge.svg)
-
 # Introduction
-Welcome to the OE-O API guide!
+![Vuepress Build](https://github.com/OE-O/Documentation/workflows/Vuepress%20Build/badge.svg) Welcome to the OE-O API guide!
 ## How It Works
 The API is a basic REST-API, you collect data by using web requests and other methods.
 
