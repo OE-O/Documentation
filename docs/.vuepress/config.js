@@ -29,13 +29,15 @@ module.exports = {
         displayAllHeaders: true,
         }
       ],
-      '/reference/': [
+      //fallback
+      '/': [
         {
-          title: 'Reference',
+          title: 'Information',
           collapsable: false,
-          sidebarDepth: 2,
+          sidebarDepth: 1,
           children: [
-            '/reference/#basic',
+            '/contact/',
+            '/about/',
           ]
         }
       ]
