@@ -1,6 +1,6 @@
 The Latest OE-O Use License
-:::tip OE-O Use License
-Version 0.1, June 2020
+:::details OE-O Use License Version 0.1,
+June 2020
 https://oe-o-docs.web.app/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
