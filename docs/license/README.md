@@ -1,6 +1,6 @@
 :::tip OE-O Use License
 Version 0.1, June 2020
-https://docs.oe-o.tk/licenses/
+https://oe-o-docs.web.app/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -176,7 +176,7 @@ https://docs.oe-o.tk/licenses/
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       https://docs.oe-o.tk/licenses/Use-License/0.1
+       https://oe-o-docs.web.app/licenses/Use-License/0.1
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
